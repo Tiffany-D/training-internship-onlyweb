@@ -1,4 +1,24 @@
+@font-face{
+    font-family: 'calvous';
+    src: url('./assets/fonts/Calvous\ DEMO.otf');
+}
 
+@font-face{
+    font-family: 'ubuntu-reg';
+    src: url('./assets/fonts/Ubuntu-Regular.ttf');
+}
+@font-face{
+    font-family: 'ubuntu-med';
+    src: url('./assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face{
+    font-family: 'ubuntu-light';
+    src: url('./assets/fonts/Ubuntu-Light.ttf');
+}
+@font-face{
+    font-family: 'ubuntu-bold';
+    src: url('./assets/fonts/Ubuntu-Bold.ttf');
+}
 
 body {
     width: 100%;
@@ -48,9 +68,11 @@ body {
             margin: 2rem 2rem 0 15rem;
 
             a {
+                font-family: 'ubuntu-light';
+                text-transform: uppercase;
                 text-decoration: none;
                 color: #ffffff;
-                font-size: 14px;
+                font-size: 12px;
                 margin: 1.5rem;
                 // z-index: 3;
             }
@@ -78,13 +100,15 @@ body {
                 font-size: 20px;
                 color: #ffffff;
                 margin: 1rem 35rem;
+                font-family: 'calvous';
                 @media screen and (min-width:350px) and (max-width:700px){
                     font-size: 16px;
                  }
             }
             h5 {
                 color: #ffffff;
-                font-size: 18px;
+                font-size: 16px;
+                font-family: 'ubuntu-light';
                 text-align: center;
                 margin: 1rem 30rem 5rem;
                 padding: 0.5rem;
@@ -153,6 +177,7 @@ body {
                     text-transform: uppercase;
                     margin-left: 0.5rem;
                     margin-right: 0.5rem;
+                    font-family: 'calvous';
                     @media screen and (min-width:350px) and (max-width:1024px){
                         font-size: 20px;
                      }
@@ -174,7 +199,7 @@ body {
          
 
                 p {
-                    
+                    font-family: 'ubuntu-light';
                     margin:1.5rem 25rem 0.2rem 55rem;
                     color: #ffffff;
                     width: 30%;
@@ -213,6 +238,7 @@ body {
             font-size: 15px;
             text-transform: uppercase;
             margin: 2rem 2rem 2rem 0.8rem;
+            font-family: 'calvous';
         } 
         }
         .bottom_links{
@@ -221,6 +247,7 @@ body {
              a{
             text-decoration: none;
             color: #ffffff;
+            font-family: 'ubuntu-light';
             span{
                 padding: 0.5rem;
             }

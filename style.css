@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'calvous';
+  src: url("./assets/fonts/Calvous DEMO.otf");
+}
+
+@font-face {
+  font-family: 'ubuntu-reg';
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntu-med';
+  src: url("./assets/fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntu-light';
+  src: url("./assets/fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntu-bold';
+  src: url("./assets/fonts/Ubuntu-Bold.ttf");
+}
+
 body {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -66,9 +91,11 @@ body .navbar .links_header {
 }
 
 body .navbar .links_header a {
+  font-family: 'ubuntu-light';
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   margin: 1.5rem;
 }
 
@@ -106,6 +133,7 @@ body .navbar .main_title h1 {
   font-size: 20px;
   color: #ffffff;
   margin: 1rem 35rem;
+  font-family: 'calvous';
 }
 
 @media screen and (min-width: 350px) and (max-width: 700px) {
@@ -116,7 +144,8 @@ body .navbar .main_title h1 {
 
 body .navbar .main_title h5 {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'ubuntu-light';
   text-align: center;
   margin: 1rem 30rem 5rem;
   padding: 0.5rem;
@@ -218,6 +247,7 @@ body .airsoft .airsoft_right .airsoft_title h3 {
   text-transform: uppercase;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  font-family: 'calvous';
 }
 
 @media screen and (min-width: 350px) and (max-width: 1024px) {
@@ -253,6 +283,7 @@ body .airsoft .airsoft_right .par {
 }
 
 body .airsoft .airsoft_right .par p {
+  font-family: 'ubuntu-light';
   margin: 1.5rem 25rem 0.2rem 55rem;
   color: #ffffff;
   width: 30%;
@@ -296,6 +327,7 @@ body footer .logo_sub_title h4 {
   font-size: 15px;
   text-transform: uppercase;
   margin: 2rem 2rem 2rem 0.8rem;
+  font-family: 'calvous';
 }
 
 body footer .bottom_links {
@@ -310,6 +342,7 @@ body footer .bottom_links {
 body footer .bottom_links a {
   text-decoration: none;
   color: #ffffff;
+  font-family: 'ubuntu-light';
 }
 
 body footer .bottom_links a span {
