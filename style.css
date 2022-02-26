@@ -1,53 +1,59 @@
-header {
+body {
   width: 100%;
-  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header .top_navbar {
+body .navbar {
   width: 100%;
-  height: 11vh;
-  position: absolute;
-  background-color: rgba(40, 49, 51, 0.5);
-  z-index: 2;
+  height: 100vh;
+  background-image: url(./assets/images/team.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
 }
 
-header .top_navbar .top_title {
+body .navbar .top_navbar {
+  background-color: rgba(40, 49, 51, 0.6);
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .top_navbar .top_title img {
-  width: 3rem;
-  margin: 0.8rem 1rem 0 9rem;
+body .navbar .top_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header .top_navbar .top_title h2 {
+body .navbar .top_title img {
+  width: 3rem;
+  margin: 0.8rem 1rem 1rem 10rem;
+}
+
+body .navbar .top_title h2 {
   font-size: 15px;
   text-transform: uppercase;
   color: #ffffff;
   margin: 2rem 1rem 0 0;
 }
 
-header .top_navbar .links_header {
+body .navbar .links_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: -1.7rem;
-  margin-right: 10rem;
+  margin: 2rem 2rem 0 15rem;
 }
 
-header .top_navbar .links_header a {
+body .navbar .links_header a {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
   margin: 1.5rem;
 }
 
-header .top_navbar .links_header img {
+body .navbar .links_header img {
   margin-top: -0.5rem;
   border: 1px solid #ceae60;
   width: 1.8em;
@@ -55,76 +61,67 @@ header .top_navbar .links_header img {
   border-radius: 50%;
 }
 
-header .home {
-  width: 100%;
-  height: 116.8vh;
+body .navbar .main_title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-header .home .team {
-  position: relative;
-  width: 100%;
+body .navbar .main_title .centered_logo {
+  width: 9rem;
+  margin: 10rem 35rem 0.5rem 35rem;
 }
 
-header .home .centered_logo {
-  top: -700px;
-  left: 650px;
-  position: relative;
-}
-
-header .home h1 {
-  position: relative;
-  top: -700px;
-  left: 530px;
+body .navbar .main_title h1 {
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 20px;
   color: #ffffff;
+  margin: 1rem 35rem;
 }
 
-header .home h5 {
-  position: relative;
+body .navbar .main_title h5 {
   color: #ffffff;
-  top: -700px;
-  left: 620px;
-  font-size: 20px;
-  margin-top: 1rem;
+  font-size: 18px;
+  text-align: center;
+  margin: 1.5rem 30rem 5rem;
   padding: 0.5rem;
-  border-radius: 7px;
+  border-radius: 5px;
   background-color: rgba(40, 49, 51, 0.7);
   width: 23%;
 }
 
-header .home h5 span {
+body .navbar .main_title h5 span {
   color: #ceae60;
 }
 
-main .airsoft {
-  position: absolute;
+body .airsoft {
   width: 100%;
-}
-
-main .airsoft .airsoft_left {
-  background-image: url(./assets/images/overlay2.png);
+  height: 100vh;
+  background-image: url(./assets/images/airsoft2.png);
   background-size: cover;
-  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-main .airsoft .airsoft_left .airsoft_pic {
-  width: 65%;
+body .airsoft .airsoft_pic {
+  width: 60%;
 }
 
-main .airsoft .airsoft_right .airsoft_title {
+body .airsoft .airsoft_right .airsoft_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  top: -600px;
-  left: 240px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 4rem 13rem 2rem;
 }
 
-main .airsoft .airsoft_right .airsoft_title h3 {
+body .airsoft .airsoft_right .airsoft_title h3 {
   font-size: 30px;
   color: #ffffff;
   text-transform: uppercase;
@@ -132,12 +129,71 @@ main .airsoft .airsoft_right .airsoft_title h3 {
   margin-right: 0.5rem;
 }
 
-main .airsoft .airsoft_right p {
-  position: relative;
-  top: -550px;
-  left: 710px;
+body .airsoft .airsoft_right .par {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .airsoft .airsoft_right .par p {
+  margin: 1.5rem 25rem 0.2rem 55rem;
   color: #ffffff;
-  margin-left: 5rem;
-  margin-right: 60rem;
+  width: 30%;
+}
+
+body footer {
+  background-color: #283133;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+}
+
+body footer .logo_sub_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body footer .logo_sub_title img {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+body footer .logo_sub_title h4 {
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 2rem 2rem 2rem 0.8rem;
+}
+
+body footer .bottom_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .bottom_links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body footer .bottom_links a span {
+  padding: 0.5rem;
+}
+
+body footer .bottom_links a .fb_links {
+  color: #ceae60;
 }
 /*# sourceMappingURL=style.css.map */
