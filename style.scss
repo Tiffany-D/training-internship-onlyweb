@@ -11,23 +11,36 @@ body {
         // background-repeat: no-repeat;
         background-position: center;
         background-attachment: initial;
+        @media screen and (min-width:350px) and (max-width:700px){
+            background-position: 25%;
+        }
+        @media screen and (min-width:701px) and (max-width:1024px){
+            background-position: 50% 25%;
+            
+         }
 
         .top_navbar {
             background-color: rgba($color: #283133, $alpha: 0.6);
             width: 100%;
             display: flex;
+
         }
         .top_title {
             display: flex;
+ 
             img {
                 width: 3rem;
                 margin: 0.8rem 1rem 1rem 10rem;
+                @media screen and (min-width:350px) and (max-width:700px){
+                    margin:0.8rem 1rem 1rem 3rem
+                 }
             }
             h2 {
                 font-size: 15px;
                 text-transform: uppercase;
                 color: #ffffff;
                 margin: 2rem 1rem 0 0;
+                font-family: 'calvous';
             }
         }
         .links_header {
@@ -53,22 +66,27 @@ body {
             display: grid;
             justify-content: center;
             align-content: center;
-
             .centered_logo {
                 width: 9rem;
                 margin: 10rem 35rem 0.5rem 35rem;
+                @media screen and (min-width:350px) and (max-width:700px){
+                    width: 7rem;
+                 }
             }
             h1 {
                 text-transform: uppercase;
                 font-size: 20px;
                 color: #ffffff;
                 margin: 1rem 35rem;
+                @media screen and (min-width:350px) and (max-width:700px){
+                    font-size: 16px;
+                 }
             }
             h5 {
                 color: #ffffff;
                 font-size: 18px;
                 text-align: center;
-                margin: 1.5rem 30rem 5rem;
+                margin: 1rem 30rem 5rem;
                 padding: 0.5rem;
                 border-radius: 5px;
                 background-color: rgba($color: #283133, $alpha: 0.7);
@@ -78,6 +96,9 @@ body {
                 span {
                     color: #ceae60;
                 }
+                @media screen and (min-width:350px) and (max-width:700px){
+                    font-size: 13px;
+                 }
             }
         }
     }
@@ -89,33 +110,83 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (min-width:350px) and (max-width:1024px){
+            background-image: none;
+         }
         .airsoft_pic {
-            width: 60%;
+            display: none;
+            @media screen and (min-width:350px) and (max-width:1024px){
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+             }
+         
+           
+        }
+        .metal{
+            display: none;
+            @media screen and (min-width:350px) and (max-width:1024px){
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 75%;
+             }
+     
         }
         .airsoft_right {
             .airsoft_title {
                 display: flex;
                 justify-content: flex-end;
                 padding: 4rem 13rem 2rem;
+                @media screen and (min-width:350px) and (max-width:1024px){
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: -50rem;
+                 }
+               
+                 
                 h3 {
                     font-size: 30px;
                     color: #ffffff;
                     text-transform: uppercase;
                     margin-left: 0.5rem;
                     margin-right: 0.5rem;
+                    @media screen and (min-width:350px) and (max-width:1024px){
+                        font-size: 20px;
+                     }
+                  
                 }
             }
           .par{
             display: grid;
             justify-content: center;
             align-content:center;
+            @media screen and (min-width:350px) and (max-width:1024px){
+                width: 200%;
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                margin-top: 50rem;
+                margin-left: 8rem;
+             }
+         
 
                 p {
                     
                     margin:1.5rem 25rem 0.2rem 55rem;
                     color: #ffffff;
                     width: 30%;
+                    @media screen and (min-width:350px) and (max-width:1024px){
+                        margin: 0.5rem;
+                     }
+                  
+                    span{
+                        color: #ceae60;
+                    }
                 }
+             
           }
             
             
@@ -153,9 +224,10 @@ body {
             span{
                 padding: 0.5rem;
             }
-            .fb_links{
-                color: #ceae60;
-            }
+         
+        }
+        .fb_links{
+            color: #ceae60;
         }
         }
       
