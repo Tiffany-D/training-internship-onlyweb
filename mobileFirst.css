@@ -40,6 +40,7 @@ header .navbar {
 @media screen and (min-width: 1024px) {
   header .navbar .top_navbar {
     background-color: rgba(40, 49, 51, 0.7);
+    padding-bottom: 0.2rem;
   }
 }
 

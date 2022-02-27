@@ -34,6 +34,7 @@ header{
     .top_navbar{
         @media screen and (min-width:1024px){
             background-color: rgba($color: #283133, $alpha: 0.7);
+            padding-bottom: 0.2rem;
         }
         .top_title{
             width: 180px;
