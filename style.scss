@@ -22,27 +22,24 @@
 
 body {
     width: 100%;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     .navbar {
         width: 100%;
-        height: 100vh;
+        // height: 140vh;
         background-image: url(./assets/images/team.png);
         background-size: cover;
+        background-color: rgba($color: #283133, $alpha: 0.6);
         // background-repeat: no-repeat;
         background-position: center;
-        background-attachment: initial;
-        @media screen and (min-width:350px) and (max-width:700px){
-            background-position: 25%;
-        }
-        @media screen and (min-width:701px) and (max-width:1024px){
-            background-position: 50% 25%;
-            
-         }
 
         .top_navbar {
-            background-color: rgba($color: #283133, $alpha: 0.6);
+            // 
             width: 100%;
-            display: flex;
+            // height: 10vh;
+            // display: flex;
+            @media screen and (min-width:801px){
+               background-color: rgba($color: #283133, $alpha: 0.6); 
+            }
 
         }
         .top_title {
@@ -50,10 +47,10 @@ body {
  
             img {
                 width: 3rem;
-                margin: 0.8rem 1rem 1rem 10rem;
-                @media screen and (min-width:350px) and (max-width:700px){
-                    margin:0.8rem 1rem 1rem 3rem
-                 }
+                margin: 0.8rem 1rem 1rem 1.5rem;
+                // @media screen and (min-width:350px) and (max-width:700px){
+                //     margin:0.8rem 1rem 1rem 3rem
+                //  }
             }
             h2 {
                 font-size: 15px;
@@ -64,8 +61,27 @@ body {
             }
         }
         .links_header {
-            display: flex;
-            margin: 2rem 2rem 0 15rem;
+            
+            
+            text-align: center;
+            @media screen and (min-width:801px){
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 3rem;
+                margin-top: -3rem;
+                // margin-bottom: 3rem;
+            }
+            .presentation{
+                border: 1px solid #ceae60;
+                padding: 1%;
+                margin:0 auto;
+                width: 30%;
+                @media screen and (min-width:801px){
+                    width: 10%;
+                    padding:0.5%
+                }
+                
+            }
 
             a {
                 font-family: 'ubuntu-light';
@@ -73,8 +89,18 @@ body {
                 text-decoration: none;
                 color: #ffffff;
                 font-size: 12px;
-                margin: 1.5rem;
+                // margin: 5%;
+                // padding: 10%;
                 // z-index: 3;
+                 @media screen and (min-width:801px){
+                // display: flex;
+                
+            }
+            }
+           
+            .pres{
+                color: #ceae60;
+                font-family: 'ubuntu-bold';
             }
             img {
                 margin-top: -0.5rem;
@@ -88,86 +114,97 @@ body {
             display: grid;
             justify-content: center;
             align-content: center;
+  
             .centered_logo {
                 width: 9rem;
-                margin: 10rem 35rem 0.5rem 35rem;
-                @media screen and (min-width:350px) and (max-width:700px){
-                    width: 7rem;
-                 }
+                margin: 5% 30%;
+                // @media screen and (min-width:350px) and (max-width:700px){
+                //     width: 7rem;
+                //  }
             }
             h1 {
                 text-transform: uppercase;
-                font-size: 20px;
+                font-size: 30px;
                 color: #ffffff;
-                margin: 1rem 35rem;
+                text-align: center;
                 font-family: 'calvous';
-                @media screen and (min-width:350px) and (max-width:700px){
-                    font-size: 16px;
+                @media screen and (min-width:300px) and (max-width:800px){
+                    // font-size: 16px;
                  }
             }
             h5 {
                 color: #ffffff;
-                font-size: 16px;
+                font-size: 26px;
                 font-family: 'ubuntu-light';
                 text-align: center;
-                margin: 1rem 30rem 5rem;
+                margin: 2%;
                 padding: 0.5rem;
                 border-radius: 5px;
                 background-color: rgba($color: #283133, $alpha: 0.7);
-                width: 23%;
+                // width: 23%;
                 //             // border: 1px solid rgba($color: #283133, $alpha: 0.7);
 
                 span {
                     color: #ceae60;
                 }
-                @media screen and (min-width:350px) and (max-width:700px){
-                    font-size: 13px;
+                @media screen and (min-width:300px) and (max-width:800px){
+                    // font-size: 13px;
                  }
             }
         }
     }
 
+
     .airsoft {
         width: 100%;
-        height: 100vh;
+        height: 80%;
+        // display: grid;
+        // justify-content: center;
+        // align-items: center;
         background-image: url(./assets/images/airsoft2.png);
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        @media screen and (min-width:350px) and (max-width:1024px){
-            background-image: none;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        @media screen and (min-width:300px) and (max-width:800px){
+            background-position: 100% top;
          }
-        .airsoft_pic {
-            display: none;
-            @media screen and (min-width:350px) and (max-width:1024px){
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: auto;
-             }
+        // .airsoft_pic {
+        //     display: none;
+        //     @media screen and (min-width:300px) and (max-width:800px){
+        //         display: flex;
+        //         // flex-direction: row;
+        //         width: 75%;
+        //         // height: 100%;
+        //         // height: auto;
+        //      }
          
            
-        }
-        .metal{
-            display: none;
-            @media screen and (min-width:350px) and (max-width:1024px){
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: 75%;
-             }
+        // }
+        // .metal{
+        //     display: none;
+        //     @media screen and (min-width:300px) and (max-width:800px){
+        //         display: flex;
+        //         // flex-direction: row;
+        //         width: 100%;
+        //         // height:120%;
+        //         // height: 60%;
+        //      }
      
-        }
+        // }
         .airsoft_right {
             .airsoft_title {
                 display: flex;
-                justify-content: flex-end;
-                padding: 4rem 13rem 2rem;
-                @media screen and (min-width:350px) and (max-width:1024px){
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    margin: -50rem;
+                justify-content: center;
+                padding: 4% 2% 2% 20%;
+                // margin: 1%;
+                @media screen and (min-width:300px) and (max-width:800px){
+                    // flex-direction: row;
+                    // justify-content: center;
+                    // margin: -50rem;
+                 }
+                 @media screen and (min-width:801px){
+                    padding: 4% 2% 2% 40%;
+                   
                  }
                
                  
@@ -178,40 +215,51 @@ body {
                     margin-left: 0.5rem;
                     margin-right: 0.5rem;
                     font-family: 'calvous';
-                    @media screen and (min-width:350px) and (max-width:1024px){
-                        font-size: 20px;
+                    @media screen and (min-width:300px) and (max-width:800px){
+                        font-size: 13px;
                      }
                   
+                }
+                img{
+                    width: 3rem;
                 }
             }
           .par{
             display: grid;
             justify-content: center;
             align-content:center;
-            @media screen and (min-width:350px) and (max-width:1024px){
-                width: 200%;
+            padding: 4% 2% 2% 10%;
+            // text-align: center;
+            @media screen and (min-width:300px) and (max-width:800px){
+                // width: 200%;
                 display: flex;
-                flex-direction: column;
-                font-size: 12px;
-                margin-top: 50rem;
-                margin-left: 8rem;
+                flex-flow: column wrap;
+                font-size: 8px;
+                // margin-top: 50rem;
+                // margin-left: 8rem;
              }
+            
          
 
                 p {
+                    
                     font-family: 'ubuntu-light';
-                    margin:1.5rem 25rem 0.2rem 55rem;
+                    // margin:1.5rem 25rem 0.2rem 55rem;
                     color: #ffffff;
                     width: 30%;
-                    @media screen and (min-width:350px) and (max-width:1024px){
+                    @media screen and (min-width:300px) and (max-width:800px){
                         margin: 0.5rem;
+                        // flex-wrap: column;
                      }
+                     @media screen and (min-width:801px){
+                        margin: 1% 5% 1% 57%;
+                    }
                   
-                    span{
+                  
+                }
+               .signature{
                         color: #ceae60;
                     }
-                }
-             
           }
             
             
@@ -221,7 +269,7 @@ body {
     footer{
         background-color: #283133;
         width: 100%;
-        height: auto;
+        // height: auto;
         padding: 3rem;
 
         .logo_sub_title{
@@ -248,6 +296,7 @@ body {
             text-decoration: none;
             color: #ffffff;
             font-family: 'ubuntu-light';
+            font-size: 12px;
             span{
                 padding: 0.5rem;
             }
@@ -260,4 +309,5 @@ body {
       
        
     }
+
 }
