@@ -1,0 +1,79 @@
+body {
+  overflow-x: hidden;
+
+  .team__content__ctn {
+    background-image: url("../../assets/images/background-fonce.jpg");
+    background-size: cover;
+    padding-top: 113px;
+    padding-bottom: 210px;
+    width: 100%;
+    .title__ctn {
+      display: flex;
+      justify-content: center;
+      padding:5em 0;
+      .title__main__item {
+        font-size: 35px;
+        font-family: "calvous";
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #ffff;
+      }
+    }
+    .lists__ctn {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .lists__sub__ctn {
+        padding: 3em;
+        flex-basis: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        .title__name__ctn {
+          font-family: "calvous";
+          font-size: 25px;
+          color: #ffff;
+          padding: 32px 0;
+          @media screen and (max-width:990px){
+            font-size: 18px;
+        }
+        }
+        .paragraph__ctn {
+            // text-align: justify;
+            padding-bottom: 15px;
+          
+          .paragraph__item {
+            font-family: "ubuntu-light";
+            font-size: 17px;
+            line-height: 27px;
+            color: #ffff;
+            @media screen and (max-width:990px){
+                font-size: 15px;
+                
+            }
+          }
+        }
+        .sub__title__ctn {
+            padding: 20px 0;
+          .sub__title__main {
+            font-family: "ubuntu-bold";
+            font-size: 17px;
+            color: #ffff;
+          }
+        }
+        .list__wrapper {
+          .list__item {
+            font-family: "ubuntu-light";
+            font-size: 17px;
+            color: #ffff;
+            line-height: 27px;
+            &::before {
+              content: url("../../assets/svg/pistolet.svg");
+              padding-right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

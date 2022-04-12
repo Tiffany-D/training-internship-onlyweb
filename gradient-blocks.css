@@ -1,0 +1,109 @@
+.container--small {
+  max-width: 500px;
+  margin-right: auto;
+}
+
+.container--very-small {
+  max-width: 440px;
+}
+
+.content__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./assets/images/background-fonce.jpg");
+  background-size: cover;
+}
+
+.content__ctn--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content__ctn--reverse .container--very-small {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* home blocks */
+.img__ctn--half {
+  width: 53%;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+.terrain .airsoft .img__ctn--half {
+  width: 62%;
+  min-height: 770px;
+}
+
+@media screen and (max-width: 1469px) {
+  .terrain .airsoft .img__ctn--half {
+    position: static;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.airsoft .img__ctn--half {
+  width: 62%;
+  overflow: hidden;
+  position: relative;
+  min-height: 770px;
+}
+
+@media screen and (max-width: 1469px) {
+  .airsoft .img__ctn--half {
+    min-height: auto;
+  }
+}
+
+.text__ctn--half {
+  width: 47%;
+}
+
+.img__ctn--image {
+  position: absolute;
+  right: -8em;
+}
+
+/* terrain blocks */
+.content__ctn-bloc--3070:last-child {
+  width: 30%;
+}
+
+.content__ctn-bloc--3070 {
+  width: 62%;
+}
+
+@media screen and (max-width: 1469px) {
+  .content__ctn-bloc--3070 {
+    position: static;
+    width: 100%;
+  }
+}
+
+.content__ctn-bloc--3070 .img__ctn--image {
+  right: -6em;
+}
+
+.content__ctn--parent--reverse .content__ctn-bloc--3070 .img__ctn--image {
+  left: -6em;
+}
+/*# sourceMappingURL=gradient-blocks.css.map */

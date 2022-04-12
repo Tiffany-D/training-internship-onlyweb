@@ -1,0 +1,88 @@
+.container--small {
+  max-width: 500px;
+  margin-right: auto;
+}
+
+.container--very-small {
+  max-width: 440px;
+}
+
+.content__ctn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("./assets/images/background-fonce.jpg");
+  background-size: cover;
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    .container--very-small {
+        margin-left: auto;
+    }
+  }
+  @media screen and (max-width: 1183px) {
+    flex-direction: column;
+  }
+}
+
+/* home blocks */
+.img__ctn--half {
+  width: 53%;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+.terrain .airsoft .img__ctn--half {
+  width: 62%;
+    min-height: 770px;
+    @media screen and (max-width: 1469px){
+      position: static;
+      min-height: auto;
+      width:100%
+      
+    }
+}
+.airsoft .img__ctn--half {
+  width: 62%;
+  overflow: hidden;
+  position: relative;
+  min-height: 770px;
+  @media screen and (max-width:1469px){
+    min-height: auto;
+  }
+}
+
+.text__ctn--half {
+  width: 47%;
+}
+
+.img__ctn--image {
+  position: absolute;
+  right: -8em;
+}
+
+/* terrain blocks */
+.content__ctn-bloc--3070:last-child {
+  width: 30%;
+}
+
+.content__ctn-bloc--3070 {
+  width: 62%;
+  @media screen and (max-width: 1469px) {
+    position: static;
+    width: 100%;
+  }
+  .img__ctn--image {
+    right: -6em;
+  }
+}
+
+.content__ctn--parent--reverse {
+  .content__ctn-bloc--3070 {
+    .img__ctn--image {
+      left: -6em;
+    }
+  }
+}
