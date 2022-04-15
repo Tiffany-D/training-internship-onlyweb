@@ -140,6 +140,7 @@ body {
                 }
               }
             }
+<<<<<<< HEAD
           }
         }
       }
@@ -241,6 +242,253 @@ body {
           font-size: 20px;
         }
       }
+=======
+          }
+        }
+      }
+      .nav-primary--hide {
+        @media screen and (max-width: 1183px) {
+          display: none;
+        }
+      }
+    }
+    .navbar__hamburger {
+      margin: 10px;
+      cursor: pointer;
+      .navbar__hamburger__line {
+        display: block;
+        width: 40px;
+        height: 3px;
+        margin-bottom: 10px;
+        background-color: #fff;
+      }
+      @media screen and (min-width: 1183px) {
+        display: none;
+      }
+    }
+  }
+  .header-pages {
+    background-image: url("./assets/images/background-fonce.jpg");
+    position: relative;
+  }
+
+  .banner {
+    background-color: rgba($color: #23272b, $alpha: 0.8);
+    background-image: url("./assets/images/team.png");
+    background-size: cover;
+    background-position: center;
+    padding: 320px 0 250px 0;
+    .banner__title__ctn {
+      .banner__logo__ctn {
+        .banner__logo {
+          width: 178px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .banner__title {
+        font-family: "calvous";
+        font-size: 70px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 40px;
+        @media screen and (max-width: 430px) {
+          font-size: 50px;
+        }
+        @media screen and (min-width: 431px) and (max-width: 1183px) {
+          font-size: 70px;
+        }
+      }
+      .banner__sub__title__ctn {
+        margin: 0 auto;
+        max-width: 380px;
+
+        .banner__sub__title {
+          background-color: rgba($color: #283133, $alpha: 0.6);
+          padding: 8px;
+          margin-top: 10px;
+          text-align: center;
+          color: #ffffff;
+          font-size: 16px;
+          font-family: "ubuntu-reg";
+          span {
+            color: #ceae60;
+          }
+          @media screen and (max-width: 1183px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .img__ctn--image-airsoft {
+    position: absolute;
+    // left: -1em;
+    @media screen and (max-width: 1469px) {
+      position: static;
+      width: 100%;
+    }
+  }
+  .img__ctn--image-terrain {
+    position: absolute;
+    // left: -1em;
+    @media screen and (max-width: 1469px) {
+      position: static;
+      width: 100%;
+    }
+  }
+  .small-container--airsoft {
+    max-width: 440px;
+    margin-left: auto;
+    @media screen and (max-width: 1469px) {
+      max-width: none;
+      margin: 0 auto;
+      padding: 3em;
+    }
+  }
+  .container--very-small {
+    max-width: 440px;
+    @media screen and (max-width: 1469px){
+      max-width: none;
+    }
+  }
+
+.img__ctn--half{
+  position: relative;
+  overflow: hidden;
+  min-height: 770px;
+  width: 62%;
+  @media screen and (max-width:1469px){
+    width: 100%;
+    min-height: auto;
+  }
+}
+  // .content__ctn--3070 {
+  //   // width: 62%;
+  //   @media screen and (max-width: 1469px) {
+  //     position: static;
+  //     width: 100%;
+  //   }
+
+  // }
+
+    .img__ctn {
+      width: 53%;
+      position: relative;
+      overflow: hidden;
+      min-height: 800px;
+      @media screen and (max-width: 1183px) {
+        position: static;
+        width: 100%;
+        min-height: auto;
+      }
+      .img__ctn--image {
+        position: absolute;
+        right: -8em;
+        @media screen and (max-width: 1183px) {
+          position: static;
+          width: 100%;
+        }
+        @media screen and (min-width: 1600px) {
+          right: -10em;
+        }
+      }
+    }
+
+    .small-container {
+      max-width: 500px;
+      margin-right: auto;
+      @media screen and (max-width: 1183px) {
+        max-width: none;
+        margin: 0 auto;
+        padding: 3em;
+      }
+    }
+  
+  .text__ctn {
+    width: 47%;
+    @media screen and (max-width: 1183px) {
+      width: 100%;
+    }
+  }
+  .text__ctn--half {
+    width: 38%;
+    @media screen and (max-width: 1469px) {
+      width: 100%;
+    }
+  }
+  .text__ctn--half-terrain{
+    width: 24%;
+    margin-bottom: 12em;
+    @media screen and (max-width:1469px){
+      width: 100%;
+      margin: 0 auto;
+      padding: 3em;
+    }
+  }
+  .title__ctn {
+    display: flex;
+    padding-bottom: 15px;
+    .title__item__img {
+      width: 36px;
+    }
+    .title__main__item {
+      color: #ffffff;
+      font-family: "calvous";
+      font-size: 35px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+
+  .paragraph__ctn {
+    color: #d2d2d2;
+    font-family: "ubuntu-light";
+    .paragraph__item {
+      padding: 12px;
+      font-size: 18px;
+      line-height: 27px;
+      span {
+        color: #ceae60;
+        .social__link {
+          text-decoration: none;
+          font-family: "ubuntu-light";
+          color: #ceae60;
+        }
+      }
+    }
+  }
+
+  .content__ctn--reverse {
+    flex-direction: row-reverse;
+    @media screen and (max-width: 1469px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .footer {
+    background-color: #23272b;
+    width: 100%;
+    padding: 75px 0 75px 0;
+    .footer__title__ctn {
+      display: flex;
+      justify-content: center;
+      .footer__logo__ctn {
+        .footer__logo__item {
+          width: 75px;
+        }
+      }
+      .footer__title__item__ctn {
+        padding: 30px 0 30px 10px;
+        .footer__title__item {
+          color: #ffffff;
+          font-family: "calvous";
+          font-size: 20px;
+        }
+      }
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
     }
 
     .footer__links {

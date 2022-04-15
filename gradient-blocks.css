@@ -3,6 +3,7 @@
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1183px) {
   .container--small {
     max-width: none;
@@ -22,6 +23,10 @@
     margin: 0 auto;
     padding: 3em 1em;
   }
+=======
+.container--very-small {
+  max-width: 440px;
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
 }
 
 .content__ctn {
@@ -57,13 +62,19 @@
   }
 }
 
+<<<<<<< HEAD
 .content__ctn .img__ctn {
+=======
+/* home blocks */
+.img__ctn--half {
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
   width: 53%;
   position: relative;
   overflow: hidden;
   min-height: 800px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1183px) {
   .content__ctn .img__ctn {
     position: static;
@@ -80,10 +91,22 @@
 @media screen and (max-width: 1183px) {
   .content__ctn .img__ctn .img__ctn--image {
     position: static;
+=======
+.terrain .airsoft .img__ctn--half {
+  width: 62%;
+  min-height: 770px;
+}
+
+@media screen and (max-width: 1469px) {
+  .terrain .airsoft .img__ctn--half {
+    position: static;
+    min-height: auto;
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
     width: 100%;
   }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1600px) {
   .content__ctn .img__ctn .img__ctn--image {
     right: -10em;
@@ -92,12 +115,17 @@
 
 .img__ctn--half-terrain-airsoft {
   width: 60%;
+=======
+.airsoft .img__ctn--half {
+  width: 62%;
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
   overflow: hidden;
   position: relative;
   min-height: 770px;
 }
 
 @media screen and (max-width: 1469px) {
+<<<<<<< HEAD
   .img__ctn--half-terrain-airsoft {
     position: static;
     min-height: auto;
@@ -133,10 +161,39 @@
 
 @media screen and (max-width: 1469px) {
   .text__ctn--half {
+=======
+  .airsoft .img__ctn--half {
+    min-height: auto;
+  }
+}
+
+.text__ctn--half {
+  width: 47%;
+}
+
+.img__ctn--image {
+  position: absolute;
+  right: -8em;
+}
+
+/* terrain blocks */
+.content__ctn-bloc--3070:last-child {
+  width: 30%;
+}
+
+.content__ctn-bloc--3070 {
+  width: 62%;
+}
+
+@media screen and (max-width: 1469px) {
+  .content__ctn-bloc--3070 {
+    position: static;
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
     width: 100%;
   }
 }
 
+<<<<<<< HEAD
 .title__ctn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,5 +232,13 @@
   text-decoration: none;
   font-family: "ubuntu-light";
   color: #ceae60;
+=======
+.content__ctn-bloc--3070 .img__ctn--image {
+  right: -6em;
+}
+
+.content__ctn--parent--reverse .content__ctn-bloc--3070 .img__ctn--image {
+  left: -6em;
+>>>>>>> 4c9260f2ea86212dacdc3a2a24734295f4e347bb
 }
 /*# sourceMappingURL=gradient-blocks.css.map */
