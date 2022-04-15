@@ -1,313 +1,265 @@
-@font-face{
-    font-family: 'calvous';
-    src: url('./assets/fonts/Calvous\ DEMO.otf');
-}
-
-@font-face{
-    font-family: 'ubuntu-reg';
-    src: url('./assets/fonts/Ubuntu-Regular.ttf');
-}
-@font-face{
-    font-family: 'ubuntu-med';
-    src: url('./assets/fonts/Ubuntu-Medium.ttf');
-}
-@font-face{
-    font-family: 'ubuntu-light';
-    src: url('./assets/fonts/Ubuntu-Light.ttf');
-}
-@font-face{
-    font-family: 'ubuntu-bold';
-    src: url('./assets/fonts/Ubuntu-Bold.ttf');
-}
+@import "./styles/fonts.scss";
+@import "./styles/variables.scss";
 
 body {
+  .container {
     width: 100%;
-    // box-sizing: border-box;
-    .navbar {
-        width: 100%;
-        // height: 140vh;
-        background-image: url(./assets/images/team.png);
-        background-size: cover;
-        background-color: rgba($color: #283133, $alpha: 0.6);
-        // background-repeat: no-repeat;
-        background-position: center;
-
-        .top_navbar {
-            // 
-            width: 100%;
-            // height: 10vh;
-            // display: flex;
-            @media screen and (min-width:801px){
-               background-color: rgba($color: #283133, $alpha: 0.6); 
-            }
-
-        }
-        .top_title {
-            display: flex;
- 
-            img {
-                width: 3rem;
-                margin: 0.8rem 1rem 1rem 1.5rem;
-                // @media screen and (min-width:350px) and (max-width:700px){
-                //     margin:0.8rem 1rem 1rem 3rem
-                //  }
-            }
-            h2 {
-                font-size: 15px;
-                text-transform: uppercase;
-                color: #ffffff;
-                margin: 2rem 1rem 0 0;
-                font-family: 'calvous';
-            }
-        }
-        .links_header {
-            
-            
-            text-align: center;
-            @media screen and (min-width:801px){
-                display: flex;
-                justify-content: flex-end;
-                margin-right: 3rem;
-                margin-top: -3rem;
-                // margin-bottom: 3rem;
-            }
-            .presentation{
-                border: 1px solid #ceae60;
-                padding: 1%;
-                margin:0 auto;
-                width: 30%;
-                @media screen and (min-width:801px){
-                    width: 10%;
-                    padding:0.5%
-                }
-                
-            }
-
-            a {
-                font-family: 'ubuntu-light';
-                text-transform: uppercase;
-                text-decoration: none;
-                color: #ffffff;
-                font-size: 12px;
-                // margin: 5%;
-                // padding: 10%;
-                // z-index: 3;
-                 @media screen and (min-width:801px){
-                // display: flex;
-                
-            }
-            }
-           
-            .pres{
-                color: #ceae60;
-                font-family: 'ubuntu-bold';
-            }
-            img {
-                margin-top: -0.5rem;
-                border: 1px solid #ceae60;
-                width: 1.8em;
-                padding: 0.68rem;
-                border-radius: 50%;
-            }
-        }
-        .main_title {
-            display: grid;
-            justify-content: center;
-            align-content: center;
-  
-            .centered_logo {
-                width: 9rem;
-                margin: 5% 30%;
-                // @media screen and (min-width:350px) and (max-width:700px){
-                //     width: 7rem;
-                //  }
-            }
-            h1 {
-                text-transform: uppercase;
-                font-size: 30px;
-                color: #ffffff;
-                text-align: center;
-                font-family: 'calvous';
-                @media screen and (min-width:300px) and (max-width:800px){
-                    // font-size: 16px;
-                 }
-            }
-            h5 {
-                color: #ffffff;
-                font-size: 26px;
-                font-family: 'ubuntu-light';
-                text-align: center;
-                margin: 2%;
-                padding: 0.5rem;
-                border-radius: 5px;
-                background-color: rgba($color: #283133, $alpha: 0.7);
-                // width: 23%;
-                //             // border: 1px solid rgba($color: #283133, $alpha: 0.7);
-
-                span {
-                    color: #ceae60;
-                }
-                @media screen and (min-width:300px) and (max-width:800px){
-                    // font-size: 13px;
-                 }
-            }
-        }
+    max-width: 1550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto;
+    @media screen and (max-width: 1183px) {
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 15px 30px;
     }
+  }
 
-
-    .airsoft {
-        width: 100%;
-        height: 80%;
-        // display: grid;
-        // justify-content: center;
-        // align-items: center;
-        background-image: url(./assets/images/airsoft2.png);
-        background-size: cover;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        @media screen and (min-width:300px) and (max-width:800px){
-            background-position: 100% top;
-         }
-        // .airsoft_pic {
-        //     display: none;
-        //     @media screen and (min-width:300px) and (max-width:800px){
-        //         display: flex;
-        //         // flex-direction: row;
-        //         width: 75%;
-        //         // height: 100%;
-        //         // height: auto;
-        //      }
-         
-           
-        // }
-        // .metal{
-        //     display: none;
-        //     @media screen and (min-width:300px) and (max-width:800px){
-        //         display: flex;
-        //         // flex-direction: row;
-        //         width: 100%;
-        //         // height:120%;
-        //         // height: 60%;
-        //      }
-     
-        // }
-        .airsoft_right {
-            .airsoft_title {
-                display: flex;
-                justify-content: center;
-                padding: 4% 2% 2% 20%;
-                // margin: 1%;
-                @media screen and (min-width:300px) and (max-width:800px){
-                    // flex-direction: row;
-                    // justify-content: center;
-                    // margin: -50rem;
-                 }
-                 @media screen and (min-width:801px){
-                    padding: 4% 2% 2% 40%;
-                   
-                 }
-               
-                 
-                h3 {
-                    font-size: 30px;
-                    color: #ffffff;
-                    text-transform: uppercase;
-                    margin-left: 0.5rem;
-                    margin-right: 0.5rem;
-                    font-family: 'calvous';
-                    @media screen and (min-width:300px) and (max-width:800px){
-                        font-size: 13px;
-                     }
-                  
-                }
-                img{
-                    width: 3rem;
-                }
+  .header {
+    width: 100%;
+    position: fixed;
+    .header-color {
+      background-color: rgba($color: #23272b, $alpha: 0.7);
+      @media screen and (max-width: 1183px) {
+        background-color: #23272b;
+      }
+      .logo__wrapper {
+        @media screen and (max-width: 359px) {
+          flex: 70%;
+        }
+        @media screen and (min-width: 360px) and (max-width: 1183px) {
+          flex: 80%;
+        }
+        .link__logo {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          max-width: 210px;
+          .header__logo__ctn {
+            padding-right: 5px;
+            .header__logo {
+              height: 56px;
             }
-          .par{
-            display: grid;
-            justify-content: center;
-            align-content:center;
-            padding: 4% 2% 2% 10%;
-            // text-align: center;
-            @media screen and (min-width:300px) and (max-width:800px){
-                // width: 200%;
-                display: flex;
-                flex-flow: column wrap;
-                font-size: 8px;
-                // margin-top: 50rem;
-                // margin-left: 8rem;
-             }
-            
-         
-
-                p {
-                    
-                    font-family: 'ubuntu-light';
-                    // margin:1.5rem 25rem 0.2rem 55rem;
-                    color: #ffffff;
-                    width: 30%;
-                    @media screen and (min-width:300px) and (max-width:800px){
-                        margin: 0.5rem;
-                        // flex-wrap: column;
-                     }
-                     @media screen and (min-width:801px){
-                        margin: 1% 5% 1% 57%;
-                    }
-                  
-                  
-                }
-               .signature{
-                        color: #ceae60;
-                    }
           }
-            
-            
+
+          .header__title {
+            color: #ffffff;
+            font-family: "calvous";
+          }
         }
-    }
-
-    footer{
-        background-color: #283133;
-        width: 100%;
-        // height: auto;
-        padding: 3rem;
-
-        .logo_sub_title{
+      }
+      .nav-primary {
         display: flex;
-        justify-content: center;
-        align-content:center;
-             img{
-            width:5rem;
-            margin-bottom: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 1183px) {
+          flex-direction: column;
+          justify-content: flex-start;
+          height: 100vh;
         }
 
-        h4{
-            color: #ffffff;
-            font-size: 15px;
-            text-transform: uppercase;
-            margin: 2rem 2rem 2rem 0.8rem;
-            font-family: 'calvous';
-        } 
-        }
-        .bottom_links{
-            display: flex;
-            justify-content: center;
-             a{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: 'ubuntu-light';
-            font-size: 12px;
-            span{
-                padding: 0.5rem;
+        .main-menu {
+          display: flex;
+          justify-content: space-between;
+          letter-spacing: 2px;
+
+          @media screen and (max-width: 1183px) {
+            flex-direction: column;
+          }
+          .menu-item {
+            @media screen and (max-width: 1183px) {
+              display: flex;
+              padding: 8px 0;
             }
-         
+            &::after {
+              content: url("./assets/svg/bckg-links.png");
+              @media screen and (max-width: 1183px) {
+                content: none;
+              }
+            }
+            .presentation {
+              @media screen and (max-width: 1183px) {
+                padding: 18px 25px;
+              }
+            }
+            .menu-item-link {
+              padding: 5px 25px;
+              color: #ffffff;
+              font-family: "ubuntu-light";
+              font-size: 15px;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid transparent;
+              &:hover {
+                border-color: #ceae60;
+                color: #ceae60;
+              }
+              @media screen and (max-width: 1183px) {
+                font-size: 22px;
+                padding: 15px 5px;
+              }
+            }
+          }
+          .galerie {
+            &::after {
+              content: none;
+            }
+          }
         }
-        .fb_links{
+        .social__wrapper__ctn {
+          .social__wrapper {
+            .social__item {
+              @media screen and (max-width: 1183px) {
+                padding: 10px 0;
+              }
+              .social__link {
+                text-decoration: none;
+                color: #ceae60;
+                font-family: "ubuntu-light";
+                span {
+                  display: none;
+                  @media screen and (max-width: 1183px) {
+                    display: inline;
+                    padding-right: 10px;
+                  }
+                }
+                i {
+                  height: 25px;
+                  width: 25px;
+                  border-radius: 50%;
+                  border: 1px solid #ceae60;
+                  color: #ceae60;
+                  font-size: 12px;
+                  padding: 6px 7px;
+                  &:hover {
+                    color: #ffffff;
+                    border-color: #ffffff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .nav-primary--hide {
+        @media screen and (max-width: 1183px) {
+          display: none;
+        }
+      }
+    }
+    .navbar__hamburger {
+      margin: 10px;
+      cursor: pointer;
+      .navbar__hamburger__line {
+        display: block;
+        width: 40px;
+        height: 3px;
+        margin-bottom: 10px;
+        background-color: #fff;
+      }
+      @media screen and (min-width: 1183px) {
+        display: none;
+      }
+    }
+  }
+  .header-pages {
+    background-image: url("./assets/images/background-fonce.jpg");
+    position: relative;
+  }
+
+  .banner {
+    background-color: rgba($color: #23272b, $alpha: 0.8);
+    background-image: url("./assets/images/team.png");
+    background-size: cover;
+    background-position: center;
+    padding: 320px 0 250px 0;
+    .banner__title__ctn {
+      .banner__logo__ctn {
+        .banner__logo {
+          width: 178px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .banner__title {
+        font-family: "calvous";
+        font-size: 70px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 40px;
+        @media screen and (max-width: 430px) {
+          font-size: 50px;
+        }
+        @media screen and (min-width: 431px) and (max-width: 1183px) {
+          font-size: 70px;
+        }
+      }
+      .banner__sub__title__ctn {
+        margin: 0 auto;
+        max-width: 380px;
+
+        .banner__sub__title {
+          background-color: rgba($color: #283133, $alpha: 0.6);
+          padding: 8px;
+          margin-top: 10px;
+          text-align: center;
+          color: #ffffff;
+          font-size: 16px;
+          font-family: "ubuntu-reg";
+          span {
             color: #ceae60;
+          }
+          @media screen and (max-width: 1183px) {
+            font-size: 15px;
+          }
         }
+      }
+    }
+  }
+
+
+  .footer {
+    background-color: #23272b;
+    width: 100%;
+    padding: 75px 0 75px 0;
+    .footer__title__ctn {
+      display: flex;
+      justify-content: center;
+      .footer__logo__ctn {
+        .footer__logo__item {
+          width: 75px;
         }
-      
-       
+      }
+      .footer__title__item__ctn {
+        padding: 30px 0 30px 10px;
+        .footer__title__item {
+          color: #ffffff;
+          font-family: "calvous";
+          font-size: 20px;
+        }
+      }
     }
 
+    .footer__links {
+      text-align: center;
+      padding-top: 25px;
+      font-family: "ubuntu-light";
+      font-size: 20px;
+      .footer__links__link {
+        text-decoration: none;
+        color: #aeaeae;
+        span {
+          padding: 0.5rem 0.5rem 0 0.5rem;
+        }
+      }
+      .fb_link {
+        color: #ceae60;
+        text-decoration: none;
+      }
+    }
+  }
 }
+@import './gradient-blocks.scss'

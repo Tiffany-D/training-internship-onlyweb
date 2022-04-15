@@ -1,0 +1,149 @@
+.container{
+    width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     border: 1px solid red; 
+     @media screen and (max-width:1001px){
+       justify-content: space-around;
+     }
+  }
+  
+    header {
+
+        .banner__navbar {
+          // max-width: 1919px;
+          width: 100%;
+          padding-right: 3rem;
+          padding-left: 3rem;
+          border: 1px solid green;
+          background-color: rgba($color: #283133, $alpha: 0.7);
+          @media screen and (min-width: 1001px) {
+            justify-content: space-between;
+          }
+          .navbar__top__wrapper {
+              justify-content: flex-start;
+              padding:10px 0;
+    
+            .navbar__logo__ctn {
+              .navbar__logo {
+                height: 56px;
+              }
+            }
+  
+            .navbar__title__ctn {
+              border: 1px solid red;
+              padding: 20px 8px;
+              .navbar__title__item {
+                font-family: "calvous";
+                font-size: 26px;
+                text-transform: uppercase;
+                color: #fff;
+  
+                @media screen and (max-width: 1200px) {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .navbar__hamburger {
+            margin-right: 0;
+            display: none;
+            cursor: pointer;
+            &__line {
+              display: block;
+              width: 40px;
+              height: 3px;
+              margin-bottom: 10px;
+              background-color: #fff;
+            }
+            @media screen and (max-width:1000px) {
+              display: inline;
+              border: 1px solid orange;
+              padding-top:25px ;
+              padding-bottom:15px ;
+              
+            }
+          }
+          .navbar__links {
+            text-transform: uppercase;
+            font-family: "ubuntu-light";
+            padding: 35px 0;
+            margin-right: 60px;
+            justify-content: center;
+  
+            @media screen and (max-width: 1000px) {
+              background-color: rgba($color: #283133, $alpha: 0.7);
+              justify-content: flex-start;
+              height: 100vh;
+              background: none;
+            }
+            .navbar__links__wrapper {
+              justify-content: space-around;
+              @media screen and (max-width:1000px){
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+              }
+              @media screen and (max-width: 1140px) {
+                font-size: 12px;
+              }
+              .navbar__links__item {
+                 &::after{
+                  content: url("./assets/svg/bckg-links.png");
+                  @media screen and (max-width:1607px){
+                    display: none;
+                  }
+  
+                }
+                .navbar__link {
+                  padding: 12px;
+                  text-decoration: none;
+                  color: #fff;
+                  margin-right: 6px;
+                  margin-left: 6px;
+                  border: 1px solid transparent;
+                 
+                  &:hover {
+                    border-color: #ceae60;
+                    color: #ceae60;
+                  }
+  
+                }
+              }
+            }
+  
+           
+          }
+          .navbar__social__wrapper__ctn{
+            border: 1px solid blue;
+            padding: 30px 0;
+             .navbar__social__wrapper {
+            .navbar__social__item {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            border: 1px solid #ceae60;
+            color: #ceae60;
+            margin-right: 0;
+              i {
+                padding: 4px 6px;
+              }
+          
+            }
+                &:hover {
+                  color: #fff;
+                  border-color: #fff;
+                  cursor: pointer;
+                } 
+          }
+          }
+         
+  
+          .navbar__links--hide {
+            display: none;
+            @media screen and (min-width: 1001px) {
+              display: inline;
+            }
+          }
+        }
+    }

@@ -1,304 +1,559 @@
 @font-face {
-  font-family: 'calvous';
-  src: url("./assets/fonts/Calvous DEMO.otf");
+  font-family: "calvous";
+  src: url("../assets/fonts/Calvous Spurs Stamp.otf");
 }
 
 @font-face {
-  font-family: 'ubuntu-reg';
+  font-family: "ubuntu-reg";
   src: url("./assets/fonts/Ubuntu-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'ubuntu-med';
+  font-family: "ubuntu-med";
   src: url("./assets/fonts/Ubuntu-Medium.ttf");
 }
 
 @font-face {
-  font-family: 'ubuntu-light';
+  font-family: "ubuntu-light";
   src: url("./assets/fonts/Ubuntu-Light.ttf");
 }
 
 @font-face {
-  font-family: 'ubuntu-bold';
+  font-family: "ubuntu-bold";
   src: url("./assets/fonts/Ubuntu-Bold.ttf");
 }
 
-body {
+body .container {
   width: 100%;
-}
-
-body .navbar {
-  width: 100%;
-  background-image: url(./assets/images/team.png);
-  background-size: cover;
-  background-color: rgba(40, 49, 51, 0.6);
-  background-position: center;
-}
-
-body .navbar .top_navbar {
-  width: 100%;
-}
-
-@media screen and (min-width: 801px) {
-  body .navbar .top_navbar {
-    background-color: rgba(40, 49, 51, 0.6);
-  }
-}
-
-body .navbar .top_title {
+  max-width: 1550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-body .navbar .top_title img {
-  width: 3rem;
-  margin: 0.8rem 1rem 1rem 1.5rem;
-}
-
-body .navbar .top_title h2 {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 2rem 1rem 0 0;
-  font-family: 'calvous';
-}
-
-body .navbar .links_header {
-  text-align: center;
-}
-
-@media screen and (min-width: 801px) {
-  body .navbar .links_header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-right: 3rem;
-    margin-top: -3rem;
-  }
-}
-
-body .navbar .links_header .presentation {
-  border: 1px solid #ceae60;
-  padding: 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
   margin: 0 auto;
-  width: 30%;
 }
 
-@media screen and (min-width: 801px) {
-  body .navbar .links_header .presentation {
-    width: 10%;
-    padding: 0.5%;
+@media screen and (max-width: 1183px) {
+  body .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 30px;
   }
 }
 
-body .navbar .links_header a {
-  font-family: 'ubuntu-light';
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 12px;
-}
-
-body .navbar .links_header .pres {
-  color: #ceae60;
-  font-family: 'ubuntu-bold';
-}
-
-body .navbar .links_header img {
-  margin-top: -0.5rem;
-  border: 1px solid #ceae60;
-  width: 1.8em;
-  padding: 0.68rem;
-  border-radius: 50%;
-}
-
-body .navbar .main_title {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-body .navbar .main_title .centered_logo {
-  width: 9rem;
-  margin: 5% 30%;
-}
-
-body .navbar .main_title h1 {
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #ffffff;
-  text-align: center;
-  font-family: 'calvous';
-}
-
-body .navbar .main_title h5 {
-  color: #ffffff;
-  font-size: 26px;
-  font-family: 'ubuntu-light';
-  text-align: center;
-  margin: 2%;
-  padding: 0.5rem;
-  border-radius: 5px;
-  background-color: rgba(40, 49, 51, 0.7);
-}
-
-body .navbar .main_title h5 span {
-  color: #ceae60;
-}
-
-body .airsoft {
+body .header {
   width: 100%;
-  height: 80%;
-  background-image: url(./assets/images/airsoft2.png);
-  background-size: cover;
+  position: fixed;
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  body .airsoft {
-    background-position: 100% top;
+body .header .header-color {
+  background-color: rgba(35, 39, 43, 0.7);
+}
+
+@media screen and (max-width: 1183px) {
+  body .header .header-color {
+    background-color: #23272b;
   }
 }
 
-body .airsoft .airsoft_right .airsoft_title {
+@media screen and (max-width: 359px) {
+  body .header .header-color .logo__wrapper {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1183px) {
+  body .header .header-color .logo__wrapper {
+    -webkit-box-flex: 80%;
+        -ms-flex: 80%;
+            flex: 80%;
+  }
+}
+
+body .header .header-color .logo__wrapper .link__logo {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 4% 2% 2% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 210px;
 }
 
-@media screen and (min-width: 801px) {
-  body .airsoft .airsoft_right .airsoft_title {
-    padding: 4% 2% 2% 40%;
-  }
+body .header .header-color .logo__wrapper .link__logo .header__logo__ctn {
+  padding-right: 5px;
 }
 
-body .airsoft .airsoft_right .airsoft_title h3 {
-  font-size: 30px;
+body .header .header-color .logo__wrapper .link__logo .header__logo__ctn .header__logo {
+  height: 56px;
+}
+
+body .header .header-color .logo__wrapper .link__logo .header__title {
   color: #ffffff;
-  text-transform: uppercase;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  font-family: 'calvous';
+  font-family: "calvous";
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  body .airsoft .airsoft_right .airsoft_title h3 {
-    font-size: 13px;
-  }
+body .header .header-color .nav-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .airsoft .airsoft_right .airsoft_title img {
-  width: 3rem;
-}
-
-body .airsoft .airsoft_right .par {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 4% 2% 2% 10%;
-}
-
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  body .airsoft .airsoft_right .par {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    font-size: 8px;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100vh;
   }
 }
 
-body .airsoft .airsoft_right .par p {
-  font-family: 'ubuntu-light';
+body .header .header-color .nav-primary .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .main-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .main-menu .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 0;
+  }
+}
+
+body .header .header-color .nav-primary .main-menu .menu-item::after {
+  content: url("./assets/svg/bckg-links.png");
+}
+
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .main-menu .menu-item::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .main-menu .menu-item .presentation {
+    padding: 18px 25px;
+  }
+}
+
+body .header .header-color .nav-primary .main-menu .menu-item .menu-item-link {
+  padding: 5px 25px;
   color: #ffffff;
-  width: 30%;
+  font-family: "ubuntu-light";
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  body .airsoft .airsoft_right .par p {
-    margin: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 801px) {
-  body .airsoft .airsoft_right .par p {
-    margin: 1% 5% 1% 57%;
-  }
-}
-
-body .airsoft .airsoft_right .par .signature {
+body .header .header-color .nav-primary .main-menu .menu-item .menu-item-link:hover {
+  border-color: #ceae60;
   color: #ceae60;
 }
 
-body footer {
-  background-color: #283133;
-  width: 100%;
-  padding: 3rem;
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .main-menu .menu-item .menu-item-link {
+    font-size: 22px;
+    padding: 15px 5px;
+  }
 }
 
-body footer .logo_sub_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+body .header .header-color .nav-primary .main-menu .galerie::after {
+  content: none;
 }
 
-body footer .logo_sub_title img {
-  width: 5rem;
-  margin-bottom: 2rem;
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .social__wrapper__ctn .social__wrapper .social__item {
+    padding: 10px 0;
+  }
 }
 
-body footer .logo_sub_title h4 {
-  color: #ffffff;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin: 2rem 2rem 2rem 0.8rem;
-  font-family: 'calvous';
-}
-
-body footer .bottom_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body footer .bottom_links a {
+body .header .header-color .nav-primary .social__wrapper__ctn .social__wrapper .social__item .social__link {
   text-decoration: none;
-  color: #ffffff;
-  font-family: 'ubuntu-light';
+  color: #ceae60;
+  font-family: "ubuntu-light";
+}
+
+body .header .header-color .nav-primary .social__wrapper__ctn .social__wrapper .social__item .social__link span {
+  display: none;
+}
+
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary .social__wrapper__ctn .social__wrapper .social__item .social__link span {
+    display: inline;
+    padding-right: 10px;
+  }
+}
+
+body .header .header-color .nav-primary .social__wrapper__ctn .social__wrapper .social__item .social__link i {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #ceae60;
+  color: #ceae60;
   font-size: 12px;
+  padding: 6px 7px;
 }
 
-body footer .bottom_links a span {
-  padding: 0.5rem;
+body .header .header-color .nav-primary .social__wrapper__ctn .social__wrapper .social__item .social__link i:hover {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
-body footer .bottom_links .fb_links {
+@media screen and (max-width: 1183px) {
+  body .header .header-color .nav-primary--hide {
+    display: none;
+  }
+}
+
+body .header .navbar__hamburger {
+  margin: 10px;
+  cursor: pointer;
+}
+
+body .header .navbar__hamburger .navbar__hamburger__line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1183px) {
+  body .header .navbar__hamburger {
+    display: none;
+  }
+}
+
+body .header-pages {
+  background-image: url("./assets/images/background-fonce.jpg");
+  position: relative;
+}
+
+body .banner {
+  background-color: rgba(35, 39, 43, 0.8);
+  background-image: url("./assets/images/team.png");
+  background-size: cover;
+  background-position: center;
+  padding: 320px 0 250px 0;
+}
+
+body .banner .banner__title__ctn .banner__logo__ctn .banner__logo {
+  width: 178px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .banner .banner__title__ctn .banner__title {
+  font-family: "calvous";
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 430px) {
+  body .banner .banner__title__ctn .banner__title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1183px) {
+  body .banner .banner__title__ctn .banner__title {
+    font-size: 70px;
+  }
+}
+
+body .banner .banner__title__ctn .banner__sub__title__ctn {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+body .banner .banner__title__ctn .banner__sub__title__ctn .banner__sub__title {
+  background-color: rgba(40, 49, 51, 0.6);
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "ubuntu-reg";
+}
+
+body .banner .banner__title__ctn .banner__sub__title__ctn .banner__sub__title span {
+  color: #ceae60;
+}
+
+@media screen and (max-width: 1183px) {
+  body .banner .banner__title__ctn .banner__sub__title__ctn .banner__sub__title {
+    font-size: 15px;
+  }
+}
+
+body .footer {
+  background-color: #23272b;
+  width: 100%;
+  padding: 75px 0 75px 0;
+}
+
+body .footer .footer__title__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .footer .footer__title__ctn .footer__logo__ctn .footer__logo__item {
+  width: 75px;
+}
+
+body .footer .footer__title__ctn .footer__title__item__ctn {
+  padding: 30px 0 30px 10px;
+}
+
+body .footer .footer__title__ctn .footer__title__item__ctn .footer__title__item {
+  color: #ffffff;
+  font-family: "calvous";
+  font-size: 20px;
+}
+
+body .footer .footer__links {
+  text-align: center;
+  padding-top: 25px;
+  font-family: "ubuntu-light";
+  font-size: 20px;
+}
+
+body .footer .footer__links .footer__links__link {
+  text-decoration: none;
+  color: #aeaeae;
+}
+
+body .footer .footer__links .footer__links__link span {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+body .footer .footer__links .fb_link {
+  color: #ceae60;
+  text-decoration: none;
+}
+
+.container--small {
+  max-width: 500px;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1183px) {
+  .container--small {
+    max-width: none;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+}
+
+.container--very-small {
+  max-width: 440px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1469px) {
+  .container--very-small {
+    max-width: none;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+}
+
+.content__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./assets/images/background-fonce.jpg");
+  background-size: cover;
+}
+
+.content__ctn--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content__ctn--reverse .container--very-small {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.content__ctn .img__ctn {
+  width: 53%;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn .img__ctn {
+    position: static;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.content__ctn .img__ctn .img__ctn--image {
+  position: absolute;
+  right: -8em;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn .img__ctn .img__ctn--image {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .content__ctn .img__ctn .img__ctn--image {
+    right: -10em;
+  }
+}
+
+.img__ctn--half-terrain-airsoft {
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  min-height: 770px;
+}
+
+@media screen and (max-width: 1469px) {
+  .img__ctn--half-terrain-airsoft {
+    position: static;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.img__ctn--half-terrain-airsoft .img__ctn--image-terrain-airsoft {
+  position: absolute;
+  left: -1em;
+}
+
+@media screen and (max-width: 1469px) {
+  .img__ctn--half-terrain-airsoft .img__ctn--image-terrain-airsoft {
+    position: static;
+    width: 100%;
+  }
+}
+
+.text__ctn {
+  width: 47%;
+}
+
+@media screen and (max-width: 1183px) {
+  .text__ctn {
+    width: 100%;
+  }
+}
+
+.text__ctn--half {
+  width: 38%;
+}
+
+@media screen and (max-width: 1469px) {
+  .text__ctn--half {
+    width: 100%;
+  }
+}
+
+.title__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.title__ctn .title__item__img {
+  width: 36px;
+}
+
+.title__ctn .title__main__item {
+  color: #ffffff;
+  font-family: "calvous";
+  font-size: 35px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.paragraph__ctn {
+  color: #d2d2d2;
+  font-family: "ubuntu-light";
+}
+
+.paragraph__ctn .paragraph__item {
+  padding: 12px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.paragraph__ctn .paragraph__item span {
+  color: #ceae60;
+}
+
+.paragraph__ctn .paragraph__item span .social__link {
+  text-decoration: none;
+  font-family: "ubuntu-light";
   color: #ceae60;
 }
 /*# sourceMappingURL=style.css.map */

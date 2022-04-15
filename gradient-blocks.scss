@@ -1,0 +1,137 @@
+.container--small {
+  max-width: 500px;
+  margin-right: auto;
+  @media screen and (max-width: 1183px) {
+    max-width: none;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+}
+
+.container--very-small {
+  max-width: 440px;
+  margin-left: auto;
+  @media screen and (max-width: 1469px) {
+    max-width: none;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+}
+
+.content__ctn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("./assets/images/background-fonce.jpg");
+  background-size: cover;
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    .container--very-small {
+      margin-left: auto;
+    }
+  }
+  @media screen and (max-width: 1183px) {
+    flex-direction: column;
+  }
+  .img__ctn {
+    width: 53%;
+    position: relative;
+    overflow: hidden;
+    min-height: 800px;
+    @media screen and (max-width: 1183px) {
+      position: static;
+      width: 100%;
+      min-height: auto;
+    }
+    .img__ctn--image {
+      position: absolute;
+      right: -8em;
+      @media screen and (max-width: 1183px) {
+        position: static;
+        width: 100%;
+      }
+      @media screen and (min-width: 1600px) {
+        right: -10em;
+      }
+    }
+  }
+ 
+}
+
+.img__ctn--half-terrain-airsoft {
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  min-height: 770px;
+  @media screen and (max-width: 1469px) {
+    position: static;
+    min-height: auto;
+    width: 100%;
+  }
+  .img__ctn--image-terrain-airsoft {
+    position: absolute;
+    left: -1em;
+    @media screen and (max-width: 1469px) {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+.text__ctn {
+  width: 47%;
+  @media screen and (max-width: 1183px) {
+    width: 100%;
+  }
+}
+
+.text__ctn--half {
+  width: 38%;
+  @media screen and (max-width: 1469px) {
+    width: 100%;
+  }
+}
+
+// .text__ctn--half-terrain {
+//   width: 24%;
+//   margin-bottom: 12em;
+//   @media screen and (max-width: 1469px) {
+//     width: 100%;
+//     margin: 0 auto;
+//     padding: 3em ;
+//   }
+// }
+
+.title__ctn {
+  display: flex;
+  padding-bottom: 15px;
+  .title__item__img {
+    width: 36px;
+  }
+  .title__main__item {
+    color: #ffffff;
+    font-family: "calvous";
+    font-size: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.paragraph__ctn {
+  color: #d2d2d2;
+  font-family: "ubuntu-light";
+  .paragraph__item {
+    padding: 12px;
+    font-size: 18px;
+    line-height: 27px;
+    span {
+      color: #ceae60;
+      .social__link {
+        text-decoration: none;
+        font-family: "ubuntu-light";
+        color: #ceae60;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+body {
+  overflow-x: hidden;
+}
+
+body .team__content__ctn {
+  background-image: url("../../assets/images/background-fonce.jpg");
+  background-size: cover;
+  padding-top: 113px;
+  padding-bottom: 210px;
+  width: 100%;
+}
+
+body .team__content__ctn .title__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em 0;
+}
+
+body .team__content__ctn .title__ctn .title__main__item {
+  font-size: 35px;
+  font-family: "calvous";
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ffff;
+}
+
+body .team__content__ctn .lists__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn {
+  padding: 3em;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .title__name__ctn {
+  font-family: "calvous";
+  font-size: 25px;
+  color: #ffff;
+  padding: 32px 0;
+}
+
+@media screen and (max-width: 990px) {
+  body .team__content__ctn .lists__ctn .lists__sub__ctn .title__name__ctn {
+    font-size: 18px;
+  }
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .paragraph__ctn {
+  padding-bottom: 15px;
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .paragraph__ctn .paragraph__item {
+  font-family: "ubuntu-light";
+  font-size: 17px;
+  line-height: 27px;
+  color: #ffff;
+}
+
+@media screen and (max-width: 990px) {
+  body .team__content__ctn .lists__ctn .lists__sub__ctn .paragraph__ctn .paragraph__item {
+    font-size: 15px;
+  }
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .sub__title__ctn {
+  padding: 20px 0;
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .sub__title__ctn .sub__title__main {
+  font-family: "ubuntu-bold";
+  font-size: 17px;
+  color: #ffff;
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .list__wrapper .list__item {
+  font-family: "ubuntu-light";
+  font-size: 17px;
+  color: #ffff;
+  line-height: 27px;
+}
+
+body .team__content__ctn .lists__ctn .lists__sub__ctn .list__wrapper .list__item::before {
+  content: url("../../assets/svg/pistolet.svg");
+  padding-right: 16px;
+}
+/*# sourceMappingURL=equipe.css.map */

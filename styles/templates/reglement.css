@@ -1,0 +1,110 @@
+body {
+  overflow-x: hidden;
+}
+
+body .container-medium {
+  max-width: 1280px;
+  padding: 0 12em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 419px) {
+  body .container-medium {
+    padding: 2em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 529px) {
+  body .container-medium {
+    padding: 2em 2em 3em 2em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 530px) and (max-width: 789px) {
+  body .container-medium {
+    padding: 3em 1em 3em 1em;
+    margin: 0 auto;
+  }
+}
+
+body .rules__content__ctn {
+  background-image: url("../../assets/images/background-fonce.jpg");
+  background-size: cover;
+  padding: 12em 0;
+  margin: 0 auto;
+}
+
+body .rules__content__ctn .title__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+body .rules__content__ctn .title__ctn .title__item__img {
+  width: 50px;
+}
+
+body .rules__content__ctn .title__ctn .title__main__item {
+  color: #ffffff;
+  font-family: "calvous";
+  font-size: 25px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 441px) {
+  body .rules__content__ctn .title__ctn .title__main__item {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+body .rules__content__ctn .paragraph__ctn {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+body .rules__content__ctn .paragraph__ctn .paragraph__item {
+  color: #ffffff;
+  font-family: 'ubuntu-light';
+  font-size: 16px;
+  line-height: 27px;
+}
+
+body .rules__content__ctn .lists__ctn .sub__title {
+  color: #ffffff;
+  font-family: 'ubuntu-bold';
+  font-size: 17px;
+  line-height: 27px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+body .rules__content__ctn .lists__ctn .list .list__wrapper {
+  text-align: start;
+}
+
+body .rules__content__ctn .lists__ctn .list .list__wrapper .list__item {
+  line-height: 27px;
+  color: #ffffff;
+  font-family: 'ubuntu-light';
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+body .rules__content__ctn .lists__ctn .list .list__wrapper .list__item::before {
+  content: url("../../assets/svg/pistolet.svg");
+  padding-left: 23px;
+  padding-right: 15px;
+}
+
+body .rules__content__ctn .lists__ctn .list .list__wrapper .list__item span {
+  font-family: 'ubuntu-bold';
+}
+/*# sourceMappingURL=reglement.css.map */

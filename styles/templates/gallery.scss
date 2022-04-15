@@ -1,0 +1,57 @@
+body {
+  height: 100%;
+  min-height: 100%;
+  .slider-wrapper {
+    background-image: url("../../assets/images/background-fonce.jpg");
+
+    .container-big {
+      margin: 0 auto;
+      max-width: 1542px;
+      .slider {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        overflow: hidden;
+        .slider-image--ctn {
+          .slider-image {
+            height: 405px;
+          }
+        }
+      }
+    }
+    .hidden {
+      display: none;
+    }
+    .slider-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      // height: 100px;
+      // background-color: white;
+      background-color: rgba(0, 0, 0, 0.7); /* black with opacity sets to 0.4 */
+      .slider-big-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .slider-container {
+          max-width: 520px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // display: block;
+          // margin: 0 auto;
+          top: 10%;
+          left: 35%;
+          // right: 40%;
+          // bottom: 15%;
+          .slider-image {
+            // display: flex;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

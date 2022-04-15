@@ -1,0 +1,68 @@
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body .slider-wrapper {
+  background-image: url("../../assets/images/background-fonce.jpg");
+}
+
+body .slider-wrapper .container-big {
+  margin: 0 auto;
+  max-width: 1542px;
+}
+
+body .slider-wrapper .container-big .slider {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow: hidden;
+}
+
+body .slider-wrapper .container-big .slider .slider-image--ctn .slider-image {
+  height: 405px;
+}
+
+body .slider-wrapper .hidden {
+  display: none;
+}
+
+body .slider-wrapper .slider-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* black with opacity sets to 0.4 */
+}
+
+body .slider-wrapper .slider-modal .slider-big-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .slider-wrapper .slider-modal .slider-big-container .slider-container {
+  max-width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10%;
+  left: 35%;
+}
+
+body .slider-wrapper .slider-modal .slider-big-container .slider-container .slider-image {
+  width: 100%;
+}
+/*# sourceMappingURL=gallery.css.map */

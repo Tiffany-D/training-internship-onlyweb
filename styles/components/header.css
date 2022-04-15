@@ -1,0 +1,188 @@
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1001px) {
+  .container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+header .banner__navbar {
+  width: 100%;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border: 1px solid green;
+  background-color: rgba(40, 49, 51, 0.7);
+}
+
+@media screen and (min-width: 1001px) {
+  header .banner__navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header .banner__navbar .navbar__top__wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 0;
+}
+
+header .banner__navbar .navbar__top__wrapper .navbar__logo__ctn .navbar__logo {
+  height: 56px;
+}
+
+header .banner__navbar .navbar__top__wrapper .navbar__title__ctn {
+  border: 1px solid red;
+  padding: 20px 8px;
+}
+
+header .banner__navbar .navbar__top__wrapper .navbar__title__ctn .navbar__title__item {
+  font-family: "calvous";
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  header .banner__navbar .navbar__top__wrapper .navbar__title__ctn .navbar__title__item {
+    font-size: 15px;
+  }
+}
+
+header .banner__navbar .navbar__hamburger {
+  margin-right: 0;
+  display: none;
+  cursor: pointer;
+}
+
+header .banner__navbar .navbar__hamburger__line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  header .banner__navbar .navbar__hamburger {
+    display: inline;
+    border: 1px solid orange;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}
+
+header .banner__navbar .navbar__links {
+  text-transform: uppercase;
+  font-family: "ubuntu-light";
+  padding: 35px 0;
+  margin-right: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  header .banner__navbar .navbar__links {
+    background-color: rgba(40, 49, 51, 0.7);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100vh;
+    background: none;
+  }
+}
+
+header .banner__navbar .navbar__links .navbar__links__wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px) {
+  header .banner__navbar .navbar__links .navbar__links__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  header .banner__navbar .navbar__links .navbar__links__wrapper {
+    font-size: 12px;
+  }
+}
+
+header .banner__navbar .navbar__links .navbar__links__wrapper .navbar__links__item::after {
+  content: url("./assets/svg/bckg-links.png");
+}
+
+@media screen and (max-width: 1607px) {
+  header .banner__navbar .navbar__links .navbar__links__wrapper .navbar__links__item::after {
+    display: none;
+  }
+}
+
+header .banner__navbar .navbar__links .navbar__links__wrapper .navbar__links__item .navbar__link {
+  padding: 12px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 6px;
+  margin-left: 6px;
+  border: 1px solid transparent;
+}
+
+header .banner__navbar .navbar__links .navbar__links__wrapper .navbar__links__item .navbar__link:hover {
+  border-color: #ceae60;
+  color: #ceae60;
+}
+
+header .banner__navbar .navbar__social__wrapper__ctn {
+  border: 1px solid blue;
+  padding: 30px 0;
+}
+
+header .banner__navbar .navbar__social__wrapper__ctn .navbar__social__wrapper .navbar__social__item {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #ceae60;
+  color: #ceae60;
+  margin-right: 0;
+}
+
+header .banner__navbar .navbar__social__wrapper__ctn .navbar__social__wrapper .navbar__social__item i {
+  padding: 4px 6px;
+}
+
+header .banner__navbar .navbar__social__wrapper__ctn .navbar__social__wrapper:hover {
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+header .banner__navbar .navbar__links--hide {
+  display: none;
+}
+
+@media screen and (min-width: 1001px) {
+  header .banner__navbar .navbar__links--hide {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=header.css.map */

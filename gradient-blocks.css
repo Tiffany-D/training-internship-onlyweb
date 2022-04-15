@@ -1,0 +1,179 @@
+.container--small {
+  max-width: 500px;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1183px) {
+  .container--small {
+    max-width: none;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+}
+
+.container--very-small {
+  max-width: 440px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1469px) {
+  .container--very-small {
+    max-width: none;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+}
+
+.content__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./assets/images/background-fonce.jpg");
+  background-size: cover;
+}
+
+.content__ctn--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content__ctn--reverse .container--very-small {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.content__ctn .img__ctn {
+  width: 53%;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn .img__ctn {
+    position: static;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.content__ctn .img__ctn .img__ctn--image {
+  position: absolute;
+  right: -8em;
+}
+
+@media screen and (max-width: 1183px) {
+  .content__ctn .img__ctn .img__ctn--image {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .content__ctn .img__ctn .img__ctn--image {
+    right: -10em;
+  }
+}
+
+.img__ctn--half-terrain-airsoft {
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  min-height: 770px;
+}
+
+@media screen and (max-width: 1469px) {
+  .img__ctn--half-terrain-airsoft {
+    position: static;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.img__ctn--half-terrain-airsoft .img__ctn--image-terrain-airsoft {
+  position: absolute;
+  left: -1em;
+}
+
+@media screen and (max-width: 1469px) {
+  .img__ctn--half-terrain-airsoft .img__ctn--image-terrain-airsoft {
+    position: static;
+    width: 100%;
+  }
+}
+
+.text__ctn {
+  width: 47%;
+}
+
+@media screen and (max-width: 1183px) {
+  .text__ctn {
+    width: 100%;
+  }
+}
+
+.text__ctn--half {
+  width: 38%;
+}
+
+@media screen and (max-width: 1469px) {
+  .text__ctn--half {
+    width: 100%;
+  }
+}
+
+.title__ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.title__ctn .title__item__img {
+  width: 36px;
+}
+
+.title__ctn .title__main__item {
+  color: #ffffff;
+  font-family: "calvous";
+  font-size: 35px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.paragraph__ctn {
+  color: #d2d2d2;
+  font-family: "ubuntu-light";
+}
+
+.paragraph__ctn .paragraph__item {
+  padding: 12px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.paragraph__ctn .paragraph__item span {
+  color: #ceae60;
+}
+
+.paragraph__ctn .paragraph__item span .social__link {
+  text-decoration: none;
+  font-family: "ubuntu-light";
+  color: #ceae60;
+}
+/*# sourceMappingURL=gradient-blocks.css.map */

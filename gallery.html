@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/templates/gallery.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+    <title>Galerie Photos</title>
+</head>
+<body>
+    <header class="header header-pages">
+        <div class="header-color">
+      <div class="container">
+        <div class="logo__wrapper">
+          <a class="link__logo" href="index.html">
+            <div class="header__logo__ctn">
+          <img class="header__logo" src="./assets/svg/logo-svg-ghosts-02.svg"/>
+          </div>
+          <p class="header__title">ghosts team</p>
+         </a>
+        </div>
+        <div class="navbar__hamburger">
+         <span class="navbar__hamburger__line"></span>
+         <span class="navbar__hamburger__line"></span>
+         <span class="navbar__hamburger__line"></span>
+       </div>
+        <nav class="nav-primary nav-primary--hide">
+           <ul class="main-menu">
+             <li class="menu-item"><a class="menu-item-link presentation" href="index.html">présentation</a></li>
+             <li class="menu-item"><a class="menu-item-link" href="airsoft.html">l'airsoft</a></li>
+             <li class="menu-item"><a class="menu-item-link" href="terrain.html">terrain</a></li>
+             <li class="menu-item"><a class="menu-item-link" href="reglement.html">règlement</a></li>
+             <li class="menu-item"><a class="menu-item-link" href="equipe.html">équipe</a></li>
+             <li class="menu-item galerie"><a class="menu-item-link" href="gallery.html">galerie photos</a></li>
+           </ul>
+        
+        <div class="social__wrapper__ctn">
+          <ul class="social__wrapper">
+            <li class="social__item"><a class="social__link" href="/" target="_blank"><span>Suivez nous sur Facebook:</span><i class="fa-brands fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+       </nav> 
+     </div>
+      </div>
+      
+   </div>
+    </header>
+<section class="slider-wrapper">
+  <div class="container-big">
+<div class="slider" id="toAddInModal">
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="1" src="./assets/PHOTOS/81596757_115167769998553_6577973796597137408_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="2" src="./assets/PHOTOS/89870633_139537274228269_5569674466595700736_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="3" src="./assets/PHOTOS/89768744_139535584228438_1864708348465643520_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="4" src="./assets/PHOTOS/89514033_139535974228399_8881699962459521024_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="5" src="./assets/PHOTOS/89544280_139535710895092_8984354766075199488_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="6" src="./assets/PHOTOS/89777757_139537447561585_1847831248706207744_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="7" src="./assets/PHOTOS/89444665_139535860895077_5501408358017531904_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="8" src="./assets/PHOTOS/acceuil-photo-2.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="9" src="./assets/PHOTOS/89828886_139537670894896_5061497311977275392_o.jpg" alt="ghosts team"/>
+  </div>
+  <div class="slider-image--ctn">
+    <img class="slider-image" data-group="10" src="./assets/PHOTOS/89542237_139536427561687_7824874455565336576_o.jpg" alt="ghosts team"/>
+  </div>
+
+</div>
+  </div>
+  <div class="slider-modal hidden" id="modal">
+    <div class="slider-big-container">
+    <div class="slider-container">
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="1" src="./assets/PHOTOS/81596757_115167769998553_6577973796597137408_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="2" src="./assets/PHOTOS/89870633_139537274228269_5569674466595700736_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="3" src="./assets/PHOTOS/89768744_139535584228438_1864708348465643520_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="4" src="./assets/PHOTOS/89514033_139535974228399_8881699962459521024_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="5" src="./assets/PHOTOS/89544280_139535710895092_8984354766075199488_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="6" src="./assets/PHOTOS/89777757_139537447561585_1847831248706207744_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="7" src="./assets/PHOTOS/89444665_139535860895077_5501408358017531904_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="8" src="./assets/PHOTOS/acceuil-photo-2.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="9" src="./assets/PHOTOS/89828886_139537670894896_5061497311977275392_o.jpg" alt="ghosts team"/>
+    </div>
+    <div class="slider-image--ctn">
+      <img class="slider-image" data-group="10" src="./assets/PHOTOS/89542237_139536427561687_7824874455565336576_o.jpg" alt="ghosts team"/>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+    <div class="footer__title__ctn container">
+      <div class="footer__logo__ctn">
+        <img
+          class="footer__logo__item"
+          src="./assets/svg/logo-svg-ghosts-02.svg"
+          alt="ghosts_team_logo"
+        />
+      </div>
+      <div class="footer__title__item__ctn">
+        <h4 class="footer__title__item">ghosts team</h4>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a class="footer__links__link" href="/">Vie privée <span>•</span></a>
+      <a class="fb_link" href="/">Facebook Ghosts Team</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
